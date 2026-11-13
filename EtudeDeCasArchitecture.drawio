@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="o28bcWwo5olm5-12JwcA">
+    <mxGraphModel dx="2876" dy="1129" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Vue + Controleur" vertex="1">
+          <mxGeometry height="290" width="350" x="210" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-2" parent="8RrUcW3ov7emjBIIRDVM-1" style="swimlane;whiteSpace=wrap;html=1;" value="interface" vertex="1">
+          <mxGeometry height="200" width="200" x="75" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-3" parent="8RrUcW3ov7emjBIIRDVM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Interface graphique&amp;nbsp; TKinter" vertex="1">
+          <mxGeometry height="30" width="165" x="17.5" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-4" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Couche Services" vertex="1">
+          <mxGeometry height="270" width="750" x="30" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-5" parent="8RrUcW3ov7emjBIIRDVM-4" style="swimlane;whiteSpace=wrap;html=1;" value="Serveur FastAPI" vertex="1">
+          <mxGeometry height="200" width="200" x="60" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-9" parent="8RrUcW3ov7emjBIIRDVM-4" style="swimlane;whiteSpace=wrap;html=1;" value="IA" vertex="1">
+          <mxGeometry height="200" width="200" x="410" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-6" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Open Data météo" vertex="1">
+          <mxGeometry height="200" width="200" x="-680" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-7" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Couche Données" vertex="1">
+          <mxGeometry height="230" width="750" x="30" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-12" parent="8RrUcW3ov7emjBIIRDVM-7" style="swimlane;whiteSpace=wrap;html=1;" value="base de donnée" vertex="1">
+          <mxGeometry height="170" width="200" x="20" y="39" as="geometry" />
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-15" parent="8RrUcW3ov7emjBIIRDVM-7" style="swimlane;whiteSpace=wrap;html=1;" value="modèle de l&#39;ia" vertex="1">
+          <mxGeometry height="170" width="200" x="275" y="39" as="geometry" />
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-8" edge="1" parent="1" source="8RrUcW3ov7emjBIIRDVM-1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="8RrUcW3ov7emjBIIRDVM-5" value="Lancement du serveur + call API">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="410" y="630" as="sourcePoint" />
+            <mxPoint x="460" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-10" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="8RrUcW3ov7emjBIIRDVM-9" value="Appel prédiction IA">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="380" as="sourcePoint" />
+            <mxPoint x="470" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-11" edge="1" parent="1" source="8RrUcW3ov7emjBIIRDVM-9" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" target="8RrUcW3ov7emjBIIRDVM-2" value="Renvoie la prédiction">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="620" as="sourcePoint" />
+            <mxPoint x="470" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-13" edge="1" parent="1" source="8RrUcW3ov7emjBIIRDVM-5" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="8RrUcW3ov7emjBIIRDVM-12" value="Ecriture des données téléchargées">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="830" as="sourcePoint" />
+            <mxPoint x="380" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-16" edge="1" parent="1" source="8RrUcW3ov7emjBIIRDVM-9" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.796;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="8RrUcW3ov7emjBIIRDVM-15" value="Sauvegarde du modèle">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="370" y="830" as="sourcePoint" />
+            <mxPoint x="420" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-17" edge="1" parent="1" source="8RrUcW3ov7emjBIIRDVM-9" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" target="8RrUcW3ov7emjBIIRDVM-12" value="lecture des données">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="370" y="830" as="sourcePoint" />
+            <mxPoint x="420" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-18" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Application" vertex="1">
+          <mxGeometry height="1190" width="790" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8RrUcW3ov7emjBIIRDVM-19" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="récupère les informations">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="90" y="680" as="sourcePoint" />
+            <mxPoint x="-480" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="5gnJaaX6k7GC4nQNFMl3">
+    <mxGraphModel dx="3265" dy="1343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oxn7VObXTfX24LTGldQP-2" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Interface.py" vertex="1">
+          <mxGeometry height="200" width="200" x="70" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-3" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;div&gt;Model.py&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="-320" y="484" as="geometry" />
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-4" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="API/main.py" vertex="1">
+          <mxGeometry height="200" width="200" x="70" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-5" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;div&gt;API/infoclimat.py&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="450" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="main call infoclimat">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="1040" as="sourcePoint" />
+            <mxPoint x="450" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-8" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="database.py" vertex="1">
+          <mxGeometry height="200" width="200" x="-490" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-10" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="table.py" vertex="1">
+          <mxGeometry height="200" width="200" x="-480" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-13" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="utilise">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="70" y="1040" as="sourcePoint" />
+            <mxPoint x="-290" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-14" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="utilise ObservatuinMeteo">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="70" y="1040" as="sourcePoint" />
+            <mxPoint x="-280" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-15" edge="1" parent="1" source="oxn7VObXTfX24LTGldQP-10" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="oxn7VObXTfX24LTGldQP-8" value="utilise">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-170" y="1070" as="sourcePoint" />
+            <mxPoint x="-120" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-16" edge="1" parent="1" source="oxn7VObXTfX24LTGldQP-2" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="oxn7VObXTfX24LTGldQP-4" value="Appelle main pour les call API&lt;br&gt;et pour démarrer le serveur">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="190" y="790" as="sourcePoint" />
+            <mxPoint x="240" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-17" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Appelle pour créer&lt;br&gt;et exécuter le modèle">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="70" y="600" as="sourcePoint" />
+            <mxPoint x="-120" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-18" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Weather.db" vertex="1">
+          <mxGeometry height="200" width="200" x="-770" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-19" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="lit les données">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-320" y="600" as="sourcePoint" />
+            <mxPoint x="-570" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oxn7VObXTfX24LTGldQP-20" edge="1" parent="1" source="oxn7VObXTfX24LTGldQP-8" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="enregistre les données">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-270" y="1000" as="sourcePoint" />
+            <mxPoint x="-680" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

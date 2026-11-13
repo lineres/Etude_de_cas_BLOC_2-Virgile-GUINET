@@ -1,0 +1,20 @@
+[project]
+name = "etude-de-cas-2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "lineres", email = "73391287+lineres@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.34.2",
+    "sqlalchemy>=2.1.8",
+]
+
+[project.scripts]
+etude-de-cas-2 = "etude_de_cas_2:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
